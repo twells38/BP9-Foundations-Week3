@@ -1,0 +1,64 @@
+.border{
+    width: 90%;
+    height: 200px;
+    border: 3px solid black;
+    margin: auto;
+    position: relative;
+}
+.purple-rectangle{
+    position: relative;
+    width: 50px;
+    height: 130px;
+    background-color: purple;
+    top: 50px;
+    left: 10px;
+}
+.green-rectangle{
+    width: 400px;
+    height:150px;
+    background-color: green;
+    position: absolute;
+    left: 5%;
+    top: 22px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(165, 216, 238);
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 45px;
+}
+.square-dot{
+    width: 90%;
+    height: 200px;
+    border: 3px dotted black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.square-solid{
+    width: 90%;
+    height: 140px;
+    background-color: beige;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    box-shadow: 5px 5px rgb(206, 205, 205);
+}
+.hello{
+    width: 50%;
+    height: 300px;
+    border: 1px solid rgb(206, 205, 205);
+    margin-top: 3rem;
+    margin: auto;
+    box-shadow: 3px 3px rgb(206, 205, 205);
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: rgb(123, 123, 242);
+    
+}
