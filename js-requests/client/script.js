@@ -201,6 +201,7 @@ const foodForm = document.querySelector('#food-form')
 function createFood(e) {
     e.preventDefault()
     const foodContainer = document.querySelector('#container')
+    
     const foodInput = document.querySelector('#food-input')
     body = {
         newFood: foodInput.value
@@ -208,12 +209,15 @@ function createFood(e) {
     axios.post('http://localhost:3000/food',body)
         .then(res => {
             console.log(res.data)
+            foodInput.value = ''
             foodContainer.innerHTML = ''
             for (let i = 0; i < res.data.length; i++){
                 const p = document.createElement('p')
                 p.textContent = res.data[i]
                 foodContainer.appendChild(p)
+                
             }
+            
         }).catch(error=> console.log(error))
 }
 foodForm.addEventListener('submit', createFood)
